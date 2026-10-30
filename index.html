@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enzo Fazio // Cyberpunk Portfolio & Street Garage</title>
+  <meta name="description" content="Portfólio de Enzo Fazio - Estudante de T.I. e jogador de futevôlei amador. Uma experiência cyberpunk à noite com cultura de corrida e garagem personalizada.">
+  
+  <!-- Fontes Google: Orbitron & Audiowide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-theme">
+  <!-- Efeitos Retrô Globais: Scanlines e Vinheta de Borda -->
+  <div class="screen-overlay scanlines" aria-hidden="true"></div>
+  <div class="screen-overlay vignette" aria-hidden="true"></div>
+  <div class="screen-overlay noise" aria-hidden="true"></div>
+
+  <!-- Header / Barra de Navegação Futurista -->
+  <header class="cyber-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Página Inicial de Enzo Fazio">
+        <span class="logo-symbol">⚡</span>
+        <span class="logo-text">FAZIO<span class="accent-dot">.</span>SYS</span>
+      </a>
+
+      <!-- Menu Principal: Navegação 100% Funcional -->
+      <nav class="cyber-nav" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active"><span class="nav-num">01</span> Início</a></li>
+          <li><a href="#sobre" class="nav-link"><span class="nav-num">02</span> Sobre</a></li>
+          <li><a href="#garagem" class="nav-link"><span class="nav-num">03</span> Garagem</a></li>
+          <li><a href="#projetos" class="nav-link"><span class="nav-num">04</span> Projetos</a></li>
+          <li><a href="#contato" class="nav-link"><span class="nav-num">05</span> Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-telemetry">
+        <div class="status-indicator">
+          <span class="status-ping"></span>
+          <span class="status-text">SECTOR 07 // ONLINE</span>
+        </div>
+        <button type="button" class="audio-toggle-btn" id="audioToggle" aria-label="Alternar áudio da interface" title="Efeitos sonoros da interface">
+          <span class="audio-icon" aria-hidden="true">🔊</span>
+          <span class="audio-label">FX ON</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================================================= -->
+    <!-- SEÇÃO 1: HERO (ENTRADA DA CIDADE CYBERPUNK)                        -->
+    <!-- ================================================================= -->
+    <section id="hero" class="hero-section" aria-label="Entrada da Cidade Cyberpunk">
+      
+      <!-- 1. Céu Noturno e Efeitos Atmosféricos -->
+      <div class="sky-backdrop" aria-hidden="true">
+        <div class="horizon-glow"></div>
+        <div class="sky-aurora"></div>
+        <div class="fog-layer fog-back"></div>
+        <div class="fog-layer fog-front"></div>
+      </div>
+
+      <!-- 2. Skyline de Prédios em Silhueta (3 Camadas) -->
+      <div class="city-skyline" aria-hidden="true">
+        <!-- Camada 1: Skyline Distante -->
+        <div class="skyline-layer distant-layer">
+          <div class="monolith m1"><span class="beacon"></span></div>
+          <div class="monolith m2"></div>
+          <div class="monolith m3"><span class="beacon"></span></div>
+          <div class="monolith m4"></div>
+          <div class="monolith m5"><span class="beacon"></span></div>
+          <div class="monolith m6"></div>
+          <div class="monolith m7"></div>
+          <div class="monolith m8"><span class="beacon"></span></div>
+        </div>
+
+        <!-- Camada 2: Skyline Médio com Janelas e Placas Neon -->
+        <div class="skyline-layer mid-layer">
+          <!-- Edifício A -->
+          <div class="building b-left-1">
+            <div class="windows-grid wg-1">
+              <span class="win win-cyan"></span><span class="win win-purple"></span><span class="win win-off"></span>
+              <span class="win win-magenta flicker"></span><span class="win win-cyan"></span><span class="win win-purple"></span>
+              <span class="win win-off"></span><span class="win win-cyan flicker-rare"></span><span class="win win-magenta"></span>
+            </div>
+            <div class="neon-sign sign-arrows" title="Fluxo Neon">
+              <span class="arrow-glyph a1">›</span>
+              <span class="arrow-glyph a2">›</span>
+              <span class="arrow-glyph a3">›</span>
+            </div>
+          </div>
+
+          <!-- Edifício B -->
+          <div class="building b-left-2">
+            <div class="windows-grid wg-2">
+              <span class="win win-purple flicker"></span><span class="win win-magenta"></span><span class="win win-cyan"></span>
+              <span class="win win-cyan"></span><span class="win win-off"></span><span class="win win-magenta"></span>
+            </div>
+            <div class="neon-sign sign-hex">
+              <div class="hex-badge"></div>
+              <div class="neon-bars">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edifício Central / Torre -->
+          <div class="building b-center">
+            <div class="spire-lights">
+              <span class="spire-dot d1"></span>
+              <span class="spire-dot d2"></span>
+              <span class="spire-dot d3"></span>
+            </div>
+            <div class="windows-vertical">
+              <span class="win-strip s1"></span>
+              <span class="win-strip s2 flicker"></span>
+              <span class="win-strip s3"></span>
+            </div>
+          </div>
+
+          <!-- Edifício C -->
+          <div class="building b-right-1">
+            <div class="windows-grid wg-3">
+              <span class="win win-magenta"></span><span class="win win-cyan flicker"></span><span class="win win-purple"></span>
+              <span class="win win-off"></span><span class="win win-purple"></span><span class="win win-cyan"></span>
+              <span class="win win-magenta flicker-rare"></span><span class="win win-off"></span><span class="win win-cyan"></span>
+            </div>
+            <div class="neon-sign sign-diamond">
+              <div class="neon-diamond"></div>
+              <div class="neon-stripes"></div>
+            </div>
+          </div>
+
+          <!-- Edifício D -->
+          <div class="building b-right-2">
+            <div class="windows-grid wg-4">
+              <span class="win win-purple"></span><span class="win win-magenta flicker"></span><span class="win win-off"></span>
+              <span class="win win-cyan"></span><span class="win win-off"></span><span class="win win-purple"></span>
+            </div>
+            <div class="neon-sign sign-chevron">
+              <div class="chevron-unit cu1"></div>
+              <div class="chevron-unit cu2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Camada 3: Silhuetas Próximas -->
+        <div class="skyline-layer near-layer">
+          <div class="industrial-frame if-left"></div>
+          <div class="industrial-frame if-right"></div>
+        </div>
+      </div>
+
+      <!-- 3. Chuva Fina Animada em Canvas -->
+      <canvas id="rainCanvas" class="rain-canvas" aria-hidden="true"></canvas>
+
+      <!-- 4. Pista Molhada no Chão com Reflexos e Linhas de Velocidade -->
+      <div class="wet-track-container" aria-hidden="true">
+        <div class="track-perspective-plane">
+          <div class="asphalt-surface"></div>
+          <div class="neon-reflection-city"></div>
+          <div class="neon-reflection-car" id="heroCarReflection"></div>
+          
+          <div class="speed-lines-grid">
+            <div class="lane-marking l1"></div>
+            <div class="lane-marking l2"></div>
+            <div class="lane-marking l3"></div>
+            <div class="speed-streak s1"></div>
+            <div class="speed-streak s2"></div>
+            <div class="speed-streak s3"></div>
+            <div class="speed-streak s4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Carro Cyberpunk em Destaque no Hero -->
+      <div class="hero-car-wrapper" id="heroCarWrapper" role="button" tabindex="0" aria-label="Carro de corrida cyberpunk esportivo com faróis acesos e neon underglow. Clique para acelerar o motor.">
+        
+        <div class="headlight-beam beam-left"></div>
+        <div class="headlight-beam beam-right"></div>
+        <div class="car-underglow" id="heroUnderglow"></div>
+        <div class="car-ground-shadow"></div>
+
+        <!-- SVG do Street Racer Cyberpunk -->
+        <svg class="cyber-car-svg" id="heroCarSvg" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bodyGradientHero" x1="100" y1="180" x2="880" y2="400" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#141829"/>
+              <stop offset="35%" stop-color="#231b3d"/>
+              <stop offset="70%" stop-color="#120f24"/>
+              <stop offset="100%" stop-color="#0a0a14"/>
+            </linearGradient>
+
+            <linearGradient id="hoodSheenHero" x1="200" y1="260" x2="600" y2="350" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#ff007f" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="#0d111e" stop-opacity="0"/>
+            </linearGradient>
+
+            <linearGradient id="windshieldGlassHero" x1="420" y1="170" x2="660" y2="270" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#090d1f" stop-opacity="0.95"/>
+              <stop offset="50%" stop-color="#1e183a" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.25"/>
+            </linearGradient>
+
+            <filter id="neonPinkGlowHero" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="8" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+            <filter id="headlightGlowHero" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="10" result="glow"/>
+              <feMerge>
+                <feMergeNode in="glow"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+            <linearGradient id="headlightCoreHero" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="60%" stop-color="#80f7ff"/>
+              <stop offset="100%" stop-color="#00d4ff"/>
+            </linearGradient>
+
+            <linearGradient id="tireRubberHero" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1e2230"/>
+              <stop offset="50%" stop-color="#0d0e14"/>
+              <stop offset="100%" stop-color="#050608"/>
+            </linearGradient>
+
+            <linearGradient id="rimGlowHero" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ff007f"/>
+              <stop offset="50%" stop-color="#8b5cf6"/>
+              <stop offset="100%" stop-color="#24143a"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Underglow Projetado -->
+          <ellipse cx="510" cy="425" rx="420" ry="24" fill="#ff007f" opacity="0.6" filter="url(#neonPinkGlowHero)"/>
+          <ellipse cx="510" cy="425" rx="300" ry="14" fill="#ff2a85" opacity="0.9" filter="url(#neonPinkGlowHero)"/>
+
+          <polygon points="120,420 890,420 860,390 140,390" fill="#04050a" opacity="0.85"/>
+
+          <!-- Spoiler -->
+          <g class="car-spoiler">
+            <path d="M780,185 L890,175 L895,190 L810,210 Z" fill="#1b122c" stroke="#ff007f" stroke-width="1.8"/>
+            <polygon points="800,210 820,210 815,250 795,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
+            <polygon points="855,200 870,200 860,250 848,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
+            <line x1="785" y1="184" x2="890" y2="175" stroke="#ff0055" stroke-width="3" filter="url(#neonPinkGlowHero)"/>
+          </g>
+
+          <!-- Carroceria -->
+          <path d="M120,380 C130,340 180,300 240,295 C320,290 380,270 420,230 C460,190 540,175 640,180 C720,185 770,215 820,255 C870,275 890,320 890,380 C890,395 860,405 820,405 C780,405 760,370 730,370 C690,370 670,405 340,405 C310,405 290,370 260,370 C230,370 200,405 135,405 Z" 
+                fill="url(#bodyGradientHero)" 
+                stroke="#4a2574" 
+                stroke-width="2.5"/>
+
+          <path d="M245,296 C330,290 385,272 422,232 C462,192 542,177 642,182 C718,187 766,216 812,254" 
+                stroke="#a855f7" 
+                stroke-width="2" 
+                opacity="0.85" 
+                fill="none"/>
+
+          <path d="M210,335 L380,320 L580,320 L760,335 L810,345" 
+                stroke="#ff007f" 
+                stroke-width="2.5" 
+                stroke-dasharray="16 4 8 4" 
+                filter="url(#neonPinkGlowHero)"/>
+
+          <!-- Cabine -->
+          <g class="car-cabin">
+            <path d="M430,232 C470,195 535,185 630,188 C695,190 735,215 775,250 L625,255 L430,232 Z" 
+                  fill="url(#windshieldGlassHero)" 
+                  stroke="#8b5cf6" 
+                  stroke-width="1.8"/>
+            <polygon points="620,190 635,190 630,255 618,255" fill="#150f28" stroke="#3b1d5c" stroke-width="1"/>
+            <path d="M470,225 L550,190 L570,190 L485,228 Z" fill="#ffffff" opacity="0.25"/>
+          </g>
+
+          <!-- Capô e Vents -->
+          <path d="M140,360 C170,320 220,300 290,298 L415,310 L395,335 L200,355 Z" fill="url(#hoodSheenHero)"/>
+          <line x1="280" y1="318" x2="340" y2="315" stroke="#ff007f" stroke-width="2.5" opacity="0.9"/>
+          <line x1="295" y1="326" x2="350" y2="323" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
+          <line x1="310" y1="334" x2="360" y2="331" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7"/>
+
+          <!-- Grade Dianteira -->
+          <polygon points="110,388 160,398 155,412 95,402" fill="#08080f" stroke="#ff007f" stroke-width="2"/>
+          <line x1="95" y1="404" x2="158" y2="414" stroke="#ff007f" stroke-width="3" filter="url(#neonPinkGlowHero)"/>
+
+          <!-- Faróis Acesos -->
+          <g class="headlights-cluster" filter="url(#headlightGlowHero)">
+            <polygon points="125,355 185,348 180,364 122,370" fill="url(#headlightCoreHero)"/>
+            <line x1="124" y1="352" x2="200" y2="344" stroke="#ffffff" stroke-width="3.5"/>
+            <circle cx="150" cy="358" r="9" fill="#ffffff" stroke="#00f0ff" stroke-width="2.5"/>
+            <circle cx="150" cy="358" r="4" fill="#ffffff"/>
+          </g>
+
+          <!-- Lanternas Traseiras -->
+          <g class="taillight-cluster" filter="url(#neonPinkGlowHero)">
+            <path d="M850,290 L885,305 L880,320 L845,310 Z" fill="#ff0055"/>
+            <line x1="846" y1="292" x2="885" y2="307" stroke="#ffffff" stroke-width="2.5"/>
+          </g>
+
+          <!-- Rodas -->
+          <g class="front-wheel">
+            <ellipse cx="230" cy="385" rx="54" ry="54" fill="url(#tireRubberHero)" stroke="#0f1118" stroke-width="4"/>
+            <circle cx="230" cy="385" r="38" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
+            <circle cx="230" cy="385" r="28" fill="#1b1c25" stroke="#333748" stroke-width="1.5"/>
+            <path d="M225,360 A26,26 0 0,1 250,378" stroke="#ff007f" stroke-width="5" stroke-linecap="round" filter="url(#neonPinkGlowHero)"/>
+            <line x1="230" y1="350" x2="230" y2="420" stroke="url(#rimGlowHero)" stroke-width="3"/>
+            <line x1="195" y1="385" x2="265" y2="385" stroke="url(#rimGlowHero)" stroke-width="3"/>
+            <line x1="205" y1="360" x2="255" y2="410" stroke="url(#rimGlowHero)" stroke-width="3"/>
+            <line x1="205" y1="410" x2="255" y2="360" stroke="url(#rimGlowHero)" stroke-width="3"/>
+            <circle cx="230" cy="385" r="8" fill="#ff007f" filter="url(#neonPinkGlowHero)"/>
+            <circle cx="230" cy="385" r="3" fill="#ffffff"/>
+          </g>
+
+          <g class="rear-wheel">
+            <ellipse cx="730" cy="385" rx="56" ry="56" fill="url(#tireRubberHero)" stroke="#0f1118" stroke-width="4"/>
+            <circle cx="730" cy="385" r="40" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
+            <circle cx="730" cy="385" r="30" fill="#1b1c25" stroke="#333748" stroke-width="1.5"/>
+            <path d="M725,358 A28,28 0 0,1 754,378" stroke="#ff007f" stroke-width="5.5" stroke-linecap="round" filter="url(#neonPinkGlowHero)"/>
+            <line x1="730" y1="348" x2="730" y2="422" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
+            <line x1="693" y1="385" x2="767" y2="385" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
+            <line x1="704" y1="359" x2="756" y2="411" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
+            <line x1="704" y1="411" x2="756" y2="359" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
+            <circle cx="730" cy="385" r="9" fill="#ff007f" filter="url(#neonPinkGlowHero)"/>
+            <circle cx="730" cy="385" r="3.5" fill="#ffffff"/>
+          </g>
+
+          <text x="470" y="342" fill="#e9d5ff" font-family="'Orbitron', sans-serif" font-size="13" font-weight="800" letter-spacing="4" opacity="0.8">EF-07 // TURBO</text>
+          <line x1="290" y1="398" x2="670" y2="398" stroke="#ff007f" stroke-width="2.5" filter="url(#neonPinkGlowHero)"/>
+        </svg>
+
+        <div class="exhaust-flame flame-left" id="flameLeft"></div>
+        <div class="exhaust-flame flame-right" id="flameRight"></div>
+
+        <div class="car-interactive-badge" id="carBadge" title="Pilote o carro com WASD ou clique!">
+          <span class="badge-icon">🎮</span>
+          <span class="badge-text">MODO JOGO // PILOTE NO WASD</span>
+        </div>
+      </div>
+
+      <!-- 6. Conteúdo Textual do Hero -->
+      <div class="hero-content">
+        <div class="hero-container">
+          
+          <div class="hero-meta-badge">
+            <span class="hud-bracket">[</span>
+            <span class="hud-pulse-dot"></span>
+            <span class="hud-text">PORTAL DE ACESSO // ENTRADA DA CIDADE</span>
+            <span class="hud-bracket">]</span>
+          </div>
+
+          <!-- Título Neon: Enzo Fazio -->
+          <h1 class="hero-title" aria-label="Enzo Fazio">
+            <span class="neon-flicker-text" data-text="Enzo Fazio">Enzo Fazio</span>
+          </h1>
+
+          <!-- Frase / Subtítulo -->
+          <p class="hero-subtitle">
+            Estudante de T.I. e jogador de futevôlei amador
+          </p>
+
+          <div class="hero-tags-wrapper">
+            <span class="cyber-chip"><span class="chip-dot"></span> DEV EM FORMAÇÃO</span>
+            <span class="cyber-chip"><span class="chip-dot"></span> ALTA PERFORMANCE</span>
+            <span class="cyber-chip"><span class="chip-dot"></span> AREIA & CÓDIGO</span>
+          </div>
+
+          <!-- Botão de Chamada para Ação: Navega Direto para a Garagem -->
+          <div class="hero-cta-wrapper">
+            <a href="#garagem" class="btn-neon-action" id="btnEntrarGaragem">
+              <span class="btn-glow-pulse" aria-hidden="true"></span>
+              <span class="btn-border-corner tl" aria-hidden="true"></span>
+              <span class="btn-border-corner br" aria-hidden="true"></span>
+              <span class="btn-inner">
+                <span class="btn-text">Entrar na garagem</span>
+                <span class="btn-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </span>
+            </a>
+
+            <span class="cta-hint">Pista liberada // Clique para entrar na garagem</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Indicador de Rolagem -->
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para a seção Sobre Mim">
+        <span class="scroll-text">DESCER PISTA</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SEÇÃO 2: SOBRE MIM (HISTÓRIA, T.I. E FUTEVÔLEI)                    -->
+    <!-- ================================================================= -->
+    <section id="sobre" class="cyber-section section-sobre" aria-label="Sobre Enzo Fazio">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <div class="section-tag">[ TELEMETRIA PESSOAL // 02 ]</div>
+          <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">Entre o asfalto digital do código e o dinamismo da quadra de areia</p>
+        </header>
+
+        <div class="sobre-grid">
+          <!-- Coluna 1: Bio e Filosofia -->
+          <article class="cyber-card bio-card">
+            <div class="card-glow"></div>
+            <div class="card-badge">PERFIL DO PILOTO</div>
+            <h3 class="card-heading">Dualidade: Areia & Terminal</h3>
+            <p class="card-text">
+              Meu nome é <strong>Enzo Fazio</strong>. No mundo da tecnologia, sou um estudante de T.I. focado em desenvolvimento web moderno, arquitetura limpa e infraestrutura. Gosto de entender como cada linha de código se transforma em uma interface rápida, responsiva e viva.
+            </p>
+            <p class="card-text">
+              Fora das telas, meu combustível é o <strong>futevôlei amador</strong>. A agilidade nos reflexos, a leitura rápida de jogadas na areia e o espírito de equipe na quadra são os mesmos princípios que levo para resolver problemas complexos na programação.
+            </p>
+
+            <div class="pilot-specs">
+              <div class="spec-item">
+                <span class="spec-label">LOCALIZAÇÃO:</span>
+                <span class="spec-value">Campinas, SP</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">FOCO PRINCIPAL:</span>
+                <span class="spec-value">Desenvolvimento Web & Redes</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">ESTILO DE JOGO:</span>
+                <span class="spec-value">Defesa ágil & Ataque veloz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coluna 2: Habilidades & Telemetria Técnica -->
+          <article class="cyber-card skills-card">
+            <div class="card-glow"></div>
+            <div class="card-badge">CALIBRAÇÃO DE HABILIDADES</div>
+            <h3 class="card-heading">Painel de Competências</h3>
+
+            <div class="skill-bars-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 Semântico & CSS3 Moderno</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Vanilla JavaScript & Web APIs</span>
+                  <span class="skill-pct">86%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 86%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Lógica de Programação & Algoritmos</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Fundamentos de Redes & Infraestrutura</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Levantamento de Ombro & Shark Attack (Futevôlei)</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill skill-alt" style="width: 95%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer-tip">
+              <span class="tip-icon">💡</span>
+              <span>"Código enxuto sem dependências pesadas, assim como um contra-ataque certeiro na areia."</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SEÇÃO 3: GARAGEM PERSONALIZÁVEL INTERATIVA                         -->
+    <!-- ================================================================= -->
+    <section id="garagem" class="cyber-section section-garagem" aria-label="Garagem Interativa">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <div class="section-tag">[ CUSTOMIZAÇÃO DE MÁQUINA // 03 ]</div>
+          <h2 class="section-title">A Garagem</h2>
+          <p class="section-subtitle">Ajuste o neon underglow, a pintura da lataria e acelere o motor em tempo real</p>
+        </header>
+
+        <div class="garage-bay-card">
+          
+          <!-- Baia da Garagem com o Carro Interativo -->
+          <div class="garage-stage">
+            <div class="stage-ceiling-lights">
+              <span class="light-bar lb1"></span>
+              <span class="light-bar lb2"></span>
+              <span class="light-bar lb3"></span>
+            </div>
+            
+            <div class="garage-car-viewport" id="garageCarViewport">
+              <!-- Underglow interativo da garagem -->
+              <div class="garage-underglow" id="garageUnderglow"></div>
+              
+              <!-- SVG do Carro na Garagem -->
+              <svg class="garage-car-svg" id="garageCarSvg" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="bodyPaintDynamic" x1="100" y1="180" x2="880" y2="400" gradientUnits="userSpaceOnUse">
+                    <stop id="paintStop1" offset="0%" stop-color="#141829"/>
+                    <stop id="paintStop2" offset="35%" stop-color="#231b3d"/>
+                    <stop id="paintStop3" offset="70%" stop-color="#120f24"/>
+                    <stop id="paintStop4" offset="100%" stop-color="#0a0a14"/>
+                  </linearGradient>
+
+                  <filter id="neonCustomGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="8" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <!-- Underglow no chão -->
+                <ellipse id="svgUnderglow1" cx="510" cy="425" rx="420" ry="24" fill="#ff007f" opacity="0.75" filter="url(#neonCustomGlow)"/>
+                <ellipse id="svgUnderglow2" cx="510" cy="425" rx="300" ry="14" fill="#ff2a85" opacity="0.95" filter="url(#neonCustomGlow)"/>
+
+                <polygon points="120,420 890,420 860,390 140,390" fill="#04050a" opacity="0.85"/>
+
+                <!-- Spoiler -->
+                <g class="garage-spoiler">
+                  <path d="M780,185 L890,175 L895,190 L810,210 Z" fill="#1b122c" id="spoilerWing" stroke="#ff007f" stroke-width="1.8"/>
+                  <polygon points="800,210 820,210 815,250 795,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
+                  <polygon points="855,200 870,200 860,250 848,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
+                  <line id="spoilerLed" x1="785" y1="184" x2="890" y2="175" stroke="#ff007f" stroke-width="3" filter="url(#neonCustomGlow)"/>
+                </g>
+
+                <!-- Carroceria com Gradiente Dinâmico -->
+                <path d="M120,380 C130,340 180,300 240,295 C320,290 380,270 420,230 C460,190 540,175 640,180 C720,185 770,215 820,255 C870,275 890,320 890,380 C890,395 860,405 820,405 C780,405 760,370 730,370 C690,370 670,405 340,405 C310,405 290,370 260,370 C230,370 200,405 135,405 Z" 
+                      fill="url(#bodyPaintDynamic)" 
+                      stroke="#4a2574" 
+                      stroke-width="2.5"/>
+
+                <path id="garageDecalLine" d="M210,335 L380,320 L580,320 L760,335 L810,345" 
+                      stroke="#ff007f" 
+                      stroke-width="2.5" 
+                      stroke-dasharray="16 4 8 4" 
+                      filter="url(#neonCustomGlow)"/>
+
+                <!-- Cockpit -->
+                <path d="M430,232 C470,195 535,185 630,188 C695,190 735,215 775,250 L625,255 L430,232 Z" 
+                      fill="#0e1329" 
+                      stroke="#8b5cf6" 
+                      stroke-width="1.8"/>
+
+                <!-- Faróis -->
+                <g id="garageHeadlights" class="headlights-cluster">
+                  <polygon points="125,355 185,348 180,364 122,370" fill="#ffffff"/>
+                  <line x1="124" y1="352" x2="200" y2="344" stroke="#ffffff" stroke-width="3.5"/>
+                  <circle cx="150" cy="358" r="9" fill="#ffffff" stroke="#00f0ff" stroke-width="2.5"/>
+                  <circle cx="150" cy="358" r="4" fill="#ffffff"/>
+                </g>
+
+                <!-- Rodas -->
+                <g>
+                  <ellipse cx="230" cy="385" rx="54" ry="54" fill="#141824" stroke="#0f1118" stroke-width="4"/>
+                  <circle cx="230" cy="385" r="38" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
+                  <path id="caliperFront" d="M225,360 A26,26 0 0,1 250,378" stroke="#ff007f" stroke-width="5" stroke-linecap="round"/>
+                  <circle id="hubFront" cx="230" cy="385" r="7" fill="#ff007f"/>
+                </g>
+
+                <g>
+                  <ellipse cx="730" cy="385" rx="56" ry="56" fill="#141824" stroke="#0f1118" stroke-width="4"/>
+                  <circle cx="730" cy="385" r="40" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
+                  <path id="caliperRear" d="M725,358 A28,28 0 0,1 754,378" stroke="#ff007f" stroke-width="5.5" stroke-linecap="round"/>
+                  <circle id="hubRear" cx="730" cy="385" r="8" fill="#ff007f"/>
+                </g>
+
+                <text x="470" y="342" fill="#e9d5ff" font-family="'Orbitron', sans-serif" font-size="13" font-weight="800" letter-spacing="4">EF-07 // CUSTOM</text>
+              </svg>
+            </div>
+
+            <!-- Piso de Metal e Reflexo -->
+            <div class="garage-floor-grid"></div>
+          </div>
+
+          <!-- Painel de Controles de Customização -->
+          <div class="garage-controls-panel">
+            
+            <!-- Controle 1: Cor do Neon Underglow -->
+            <div class="control-group">
+              <span class="control-label">1. ILUMINAÇÃO NEON UNDERGLOW:</span>
+              <div class="color-swatches" role="radiogroup" aria-label="Cor do Neon Underglow">
+                <button type="button" class="swatch-btn active" data-neon="#ff007f" data-name="Magenta Clássico" style="--swatch-color: #ff007f;" title="Magenta Neon"></button>
+                <button type="button" class="swatch-btn" data-neon="#00f0ff" data-name="Ciano Elétrico" style="--swatch-color: #00f0ff;" title="Ciano Elétrico"></button>
+                <button type="button" class="swatch-btn" data-neon="#8b5cf6" data-name="Roxo Hiperdrive" style="--swatch-color: #8b5cf6;" title="Roxo Hiperdrive"></button>
+                <button type="button" class="swatch-btn" data-neon="#10b981" data-name="Verde Matrix" style="--swatch-color: #10b981;" title="Verde Matrix"></button>
+                <button type="button" class="swatch-btn" data-neon="#facc15" data-name="Amarelo Nitro" style="--swatch-color: #facc15;" title="Amarelo Nitro"></button>
+              </div>
+              <span class="swatch-current-name" id="currentNeonLabel">COR ATIVA: MAGENTA CLÁSSICO</span>
+            </div>
+
+            <!-- Controle 2: Pintura da Lataria -->
+            <div class="control-group">
+              <span class="control-label">2. PINTURA DA LATARIA:</span>
+              <div class="paint-swatches" role="radiogroup" aria-label="Pintura da Carroceria">
+                <button type="button" class="paint-btn active" data-p1="#141829" data-p2="#231b3d" data-p3="#120f24" data-name="Preto Meia-Noite">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #141829, #231b3d);"></span>
+                  <span class="paint-name">Meia-Noite</span>
+                </button>
+                <button type="button" class="paint-btn" data-p1="#2d084d" data-p2="#4a154b" data-p3="#190626" data-name="Roxo Ametista">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #2d084d, #4a154b);"></span>
+                  <span class="paint-name">Ametista</span>
+                </button>
+                <button type="button" class="paint-btn" data-p1="#06283d" data-p2="#0a3a5e" data-p3="#031522" data-name="Azul Abissal">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #06283d, #0a3a5e);"></span>
+                  <span class="paint-name">Azul Abissal</span>
+                </button>
+                <button type="button" class="paint-btn" data-p1="#2b0a1a" data-p2="#521330" data-p3="#15050d" data-name="Rubi Cyber">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #2b0a1a, #521330);"></span>
+                  <span class="paint-name">Rubi Cyber</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Controle 3: Ações de Teste de Pista -->
+            <div class="control-group actions-group">
+              <span class="control-label">3. TESTE DE TELEMETRIA:</span>
+              <div class="action-buttons-row">
+                <button type="button" class="btn-garage-action" id="btnToggleHeadlights">
+                  <span class="btn-icon">💡</span>
+                  <span>Alternar Faróis</span>
+                </button>
+                <button type="button" class="btn-garage-action btn-garage-rev" id="btnGarageRev">
+                  <span class="btn-icon">⚡</span>
+                  <span>Acelerar Motor (Rev)</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SEÇÃO 4: PROJETOS (VITRINE DE CÓDIGO)                             -->
+    <!-- ================================================================= -->
+    <section id="projetos" class="cyber-section section-projetos" aria-label="Projetos Desenvolvidos">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <div class="section-tag">[ LINHAS DE CÓDIGO // 04 ]</div>
+          <h2 class="section-title">Projetos</h2>
+          <p class="section-subtitle">Aplicações, experimentos web e ferramentas construídas com foco em velocidade</p>
+        </header>
+
+        <div class="projetos-grid">
+          <!-- Projeto 1: Apenas Um Show Pancadaria -->
+          <article class="project-card">
+            <div class="card-border-glow"></div>
+            <div class="project-header">
+              <span class="project-id">PRJ.01 // WEB GAME</span>
+              <span class="project-status live">ONLINE</span>
+            </div>
+            <h3 class="project-title">Apenas Um Show // Pancadaria</h3>
+            <p class="project-desc">
+              Jogo web interativo de ação e pancadaria inspirado no universo de Apenas Um Show. Batalhas dinâmicas direto no navegador, combate ágil e temática retrô arcade.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">HTML5 Canvas</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://apenas-um-show-aozbd8sil-42081-star.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link"><span>Acessar Projeto</span> &#8599;</a>
+            </div>
+          </article>
+
+          <!-- Projeto 2: Nervoso Skins -->
+          <article class="project-card">
+            <div class="card-border-glow"></div>
+            <div class="project-header">
+              <span class="project-id">PRJ.02 // GAMING STORE</span>
+              <span class="project-status live">ONLINE</span>
+            </div>
+            <h3 class="project-title">Nervoso Skins</h3>
+            <p class="project-desc">
+              Plataforma e catálogo online de skins e itens cosméticos exclusivos para games. Interface estilizada e otimizada para a comunidade gamer com navegação rápida.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS Grid</span>
+              <span class="tech-pill">GitHub Pages</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://42081-star.github.io/nervososkins/" target="_blank" rel="noopener noreferrer" class="btn-project-link"><span>Acessar Projeto</span> &#8599;</a>
+            </div>
+          </article>
+
+          <!-- Projeto 3: Login FPS -->
+          <article class="project-card">
+            <div class="card-border-glow"></div>
+            <div class="project-header">
+              <span class="project-id">PRJ.03 // CYBER UI</span>
+              <span class="project-status live">ONLINE</span>
+            </div>
+            <h3 class="project-title">Login FPS</h3>
+            <p class="project-desc">
+              Interface imersiva de tela de login e autenticação inspirada em jogos táticos de tiro em primeira pessoa (FPS), com efeitos cyberpunk e alta fidelidade visual.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">CSS Neon FX</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://enzofazio-xsdy.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link"><span>Acessar Projeto</span> &#8599;</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SEÇÃO 5: CONTATO (CANAL DIRETO DE TRANSMISSÃO)                    -->
+    <!-- ================================================================= -->
+    <section id="contato" class="cyber-section section-contato" aria-label="Contato e Conexões">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <div class="section-tag">[ FREQUÊNCIA DE TRANSMISSÃO // 05 ]</div>
+          <h2 class="section-title">Contato</h2>
+          <p class="section-subtitle">Mande uma mensagem para projetos de tecnologia, oportunidades ou para marcar um futevôlei</p>
+        </header>
+
+        <div class="contato-grid">
+          
+          <!-- Painel Esquerdo: Dados de Contato e Redes -->
+          <div class="cyber-card contato-info-card">
+            <div class="card-glow"></div>
+            <div class="card-badge">CANAIS DE COMUNICAÇÃO</div>
+            <h3 class="card-heading">Vamos trocar uma ideia?</h3>
+            <p class="card-text">
+              Estou sempre aberto a novas conexões no mercado de tecnologia, estágios, projetos colaborativos ou desafios esportivos. Escolha a sua frequência de contato preferida:
+            </p>
+
+            <ul class="contato-channels-list">
+              <li class="channel-item">
+                <span class="channel-icon">📧</span>
+                <div class="channel-data">
+                  <span class="channel-type">EMAIL PRINCIPAL:</span>
+                  <a href="mailto:enzorodriguesfazio@gmail.com" class="channel-link">enzorodriguesfazio@gmail.com</a>
+                </div>
+              </li>
+              <li class="channel-item">
+                <span class="channel-icon">📍</span>
+                <div class="channel-data">
+                  <span class="channel-type">LOCALIZAÇÃO:</span>
+                  <span class="channel-text">Campinas, SP // Brasil</span>
+                </div>
+              </li>
+              <li class="channel-item">
+                <span class="channel-icon">⚡</span>
+                <div class="channel-data">
+                  <span class="channel-type">DISPONIBILIDADE:</span>
+                  <span class="channel-text status-active-text">Disponível para Projetos & Estágio</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="social-links-row">
+              <a href="https://github.com/42081-star" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub de Enzo Fazio">GitHub</a>
+              <a href="https://www.instagram.com/enzo.rf09/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram de Enzo Fazio">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Painel Direito: Formulário de Mensagem Direta -->
+          <div class="cyber-card form-card">
+            <div class="card-glow"></div>
+            <div class="card-badge">TERMINAL DE ENVIO</div>
+            <h3 class="card-heading">Transmitir Mensagem</h3>
+
+            <form class="cyber-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="formName" class="form-label">Seu Nome / Chamada:</label>
+                <input type="text" id="formName" class="form-input" placeholder="Ex: Alex Piloto" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Seu Email / Contato:</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="seu-email@dominio.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject" class="form-label">Assunto:</label>
+                <select id="formSubject" class="form-input form-select">
+                  <option value="projeto">Oportunidade / Projeto de T.I.</option>
+                  <option value="estagio">Proposta de Estágio</option>
+                  <option value="futevolei">Partida de Futevôlei ⚽</option>
+                  <option value="outro">Bate-papo Geral</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Mensagem:</label>
+                <textarea id="formMessage" class="form-input form-textarea" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-neon-action btn-submit" id="btnSubmitForm">
+                <span class="btn-inner">
+                  <span class="btn-text">Transmitir Mensagem</span>
+                  <span class="btn-icon">⚡</span>
+                </span>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  <!-- ================================================================= -->
+  <!-- HUD DE PILOTAGEM CYBERPUNK (MODO JOGO WASD INTERATIVO)            -->
+  <!-- ================================================================= -->
+  <aside class="cyber-game-hud" id="gameHud" aria-label="Painel de Pilotagem do Veículo">
+    <div class="hud-frame">
+      <div class="hud-header">
+        <div class="hud-status">
+          <span class="hud-pulse-light"></span>
+          <span class="hud-title">COCKPIT // EF-07</span>
+        </div>
+        <div class="hud-top-meta">
+          <span class="hud-gear" id="hudGear">D-4</span>
+          <button type="button" class="hud-toggle-btn" id="btnToggleHud" title="Minimizar / Expandir Painel" aria-label="Minimizar Controles">
+            <span class="toggle-icon" id="toggleHudIcon">−</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hud-content-panel" id="hudContentPanel">
+        <!-- Telemetria Rápida -->
+        <div class="hud-dash-grid">
+          <div class="hud-metric-box">
+            <span class="metric-label">VELOCIDADE</span>
+            <div class="metric-val"><span id="hudSpeedDisplay">140</span> <small>KM/H</small></div>
+            <div class="hud-gauge-bar">
+              <div class="hud-gauge-progress" id="hudSpeedGauge" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="hud-metric-box">
+            <span class="metric-label">CHECKPOINT</span>
+            <span class="hud-target-name" id="hudCheckpointName">01 // INÍCIO</span>
+          </div>
+        </div>
+
+        <!-- Teclas de Pilotagem WASD -->
+        <div class="hud-wasd-layout" role="group" aria-label="Teclas de pilotagem interativas">
+          <div class="wasd-row wasd-top">
+            <button type="button" class="wasd-key" data-key="w" id="wasdKeyW" title="Acelerar / Avançar Seção (W ou ↑)">
+              <span class="key-glyph">W</span>
+              <span class="key-tag">AVANÇAR</span>
+            </button>
+          </div>
+          <div class="wasd-row wasd-bottom">
+            <button type="button" class="wasd-key" data-key="a" id="wasdKeyA" title="Esterçar Esquerda (A ou ←)">
+              <span class="key-glyph">A</span>
+              <span class="key-tag">ESQ</span>
+            </button>
+            <button type="button" class="wasd-key" data-key="s" id="wasdKeyS" title="Freio / Ré / Voltar Seção (S ou ↓)">
+              <span class="key-glyph">S</span>
+              <span class="key-tag">RÉ / VOLTAR</span>
+            </button>
+            <button type="button" class="wasd-key" data-key="d" id="wasdKeyD" title="Esterçar Direita (D ou →)">
+              <span class="key-glyph">D</span>
+              <span class="key-tag">DIR</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Trajeto Neon dos Checkpoints -->
+        <div class="hud-route-container">
+          <span class="route-caption">ROTA DA CIDADE:</span>
+          <div class="hud-checkpoints-row" id="hudCheckpointsRow">
+            <button type="button" class="checkpoint-node active" data-dest="hero" title="Ir para Início">
+              <span class="node-dot"></span>
+              <span class="node-label">INÍCIO</span>
+            </button>
+            <span class="node-connector"></span>
+            <button type="button" class="checkpoint-node" data-dest="sobre" title="Ir para Sobre">
+              <span class="node-dot"></span>
+              <span class="node-label">SOBRE</span>
+            </button>
+            <span class="node-connector"></span>
+            <button type="button" class="checkpoint-node" data-dest="garagem" title="Ir para Garagem">
+              <span class="node-dot"></span>
+              <span class="node-label">GARAGEM</span>
+            </button>
+            <span class="node-connector"></span>
+            <button type="button" class="checkpoint-node" data-dest="projetos" title="Ir para Projetos">
+              <span class="node-dot"></span>
+              <span class="node-label">PROJETOS</span>
+            </button>
+            <span class="node-connector"></span>
+            <button type="button" class="checkpoint-node" data-dest="contato" title="Ir para Contato">
+              <span class="node-dot"></span>
+              <span class="node-label">CONTATO</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hud-tip-banner">
+          <span class="tip-icon">🕹️</span>
+          <span class="tip-text">USE <strong>WASD</strong> OU <strong>SETAS</strong> PARA NAVEGAR</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  </main>
+
+  <!-- Rodapé Cyberpunk -->
+  <footer class="cyber-footer">
+    <div class="footer-container">
+      <div class="footer-copy">
+        <span class="footer-brand">ENZO FAZIO</span> // 2026 • TODOS OS DIREITOS RESERVADOS.
+      </div>
+      <div class="footer-tech">
+        CONSTRUÍDO COM HTML5, CSS3 & VANILLA JAVASCRIPT PURO.
+      </div>
+      <a href="#hero" class="btn-back-top" title="Voltar ao início">
+        <span>TOPO</span> ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
