@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enzo Fazio // Cyberpunk Portfolio & Street Garage</title>
-  <meta name="description" content="Portfólio de Enzo Fazio - Estudante de T.I. e jogador de futevôlei amador. Uma experiência cyberpunk à noite com cultura de corrida e garagem personalizada.">
+  <title>Enzo Fazio // Cyberpunk Brasil • Street Racing & Portfolio</title>
+  <meta name="description" content="Portfólio de Enzo Fazio - Estudante de T.I. e jogador de futevôlei amador. Edição Especial Brasil: Verde, Azul e Amarelo com pilotagem interativa do carro no WASD.">
   
   <!-- Fontes Google: Orbitron & Audiowide -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
       <div class="header-telemetry">
         <div class="status-indicator">
           <span class="status-ping"></span>
-          <span class="status-text">SECTOR 07 // ONLINE</span>
+          <span class="status-text">SECTOR BR // ONLINE 🇧🇷</span>
         </div>
         <button type="button" class="audio-toggle-btn" id="audioToggle" aria-label="Alternar áudio da interface" title="Efeitos sonoros da interface">
           <span class="audio-icon" aria-hidden="true">🔊</span>
@@ -187,26 +187,26 @@
         <div class="car-underglow" id="heroUnderglow"></div>
         <div class="car-ground-shadow"></div>
 
-        <!-- SVG do Street Racer Cyberpunk -->
+        <!-- SVG do Street Racer Cyberpunk (Edição Brasil: Verde, Azul e Amarelo) -->
         <svg class="cyber-car-svg" id="heroCarSvg" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="bodyGradientHero" x1="100" y1="180" x2="880" y2="400" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#141829"/>
-              <stop offset="35%" stop-color="#231b3d"/>
-              <stop offset="70%" stop-color="#120f24"/>
-              <stop offset="100%" stop-color="#0a0a14"/>
+              <stop offset="0%" stop-color="#071830"/>
+              <stop offset="35%" stop-color="#023b1c"/>
+              <stop offset="70%" stop-color="#042642"/>
+              <stop offset="100%" stop-color="#020914"/>
             </linearGradient>
 
             <linearGradient id="hoodSheenHero" x1="200" y1="260" x2="600" y2="350" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
-              <stop offset="50%" stop-color="#ff007f" stop-opacity="0.2"/>
-              <stop offset="100%" stop-color="#0d111e" stop-opacity="0"/>
+              <stop offset="0%" stop-color="#00e676" stop-opacity="0.4"/>
+              <stop offset="50%" stop-color="#ffea00" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#031627" stop-opacity="0"/>
             </linearGradient>
 
             <linearGradient id="windshieldGlassHero" x1="420" y1="170" x2="660" y2="270" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#090d1f" stop-opacity="0.95"/>
-              <stop offset="50%" stop-color="#1e183a" stop-opacity="0.9"/>
-              <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.25"/>
+              <stop offset="0%" stop-color="#030c1d" stop-opacity="0.95"/>
+              <stop offset="50%" stop-color="#06203a" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#0099ff" stop-opacity="0.35"/>
             </linearGradient>
 
             <filter id="neonPinkGlowHero" x="-20%" y="-20%" width="140%" height="140%">
@@ -228,51 +228,51 @@
 
             <linearGradient id="headlightCoreHero" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stop-color="#ffffff"/>
-              <stop offset="60%" stop-color="#80f7ff"/>
-              <stop offset="100%" stop-color="#00d4ff"/>
+              <stop offset="60%" stop-color="#a7f3d0"/>
+              <stop offset="100%" stop-color="#0099ff"/>
             </linearGradient>
 
             <linearGradient id="tireRubberHero" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1e2230"/>
-              <stop offset="50%" stop-color="#0d0e14"/>
-              <stop offset="100%" stop-color="#050608"/>
+              <stop offset="0%" stop-color="#141f2e"/>
+              <stop offset="50%" stop-color="#0a1018"/>
+              <stop offset="100%" stop-color="#03060a"/>
             </linearGradient>
 
             <linearGradient id="rimGlowHero" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#ff007f"/>
-              <stop offset="50%" stop-color="#8b5cf6"/>
-              <stop offset="100%" stop-color="#24143a"/>
+              <stop offset="0%" stop-color="#ffea00"/>
+              <stop offset="50%" stop-color="#00e676"/>
+              <stop offset="100%" stop-color="#0055d4"/>
             </linearGradient>
           </defs>
 
-          <!-- Underglow Projetado -->
-          <ellipse cx="510" cy="425" rx="420" ry="24" fill="#ff007f" opacity="0.6" filter="url(#neonPinkGlowHero)"/>
-          <ellipse cx="510" cy="425" rx="300" ry="14" fill="#ff2a85" opacity="0.9" filter="url(#neonPinkGlowHero)"/>
+          <!-- Underglow Projetado Brasil: Verde Neon e Amarelo Ouro -->
+          <ellipse cx="510" cy="425" rx="420" ry="24" fill="#00e676" opacity="0.65" filter="url(#neonPinkGlowHero)"/>
+          <ellipse cx="510" cy="425" rx="300" ry="14" fill="#ffea00" opacity="0.9" filter="url(#neonPinkGlowHero)"/>
 
-          <polygon points="120,420 890,420 860,390 140,390" fill="#04050a" opacity="0.85"/>
+          <polygon points="120,420 890,420 860,390 140,390" fill="#020813" opacity="0.85"/>
 
           <!-- Spoiler -->
           <g class="car-spoiler">
-            <path d="M780,185 L890,175 L895,190 L810,210 Z" fill="#1b122c" stroke="#ff007f" stroke-width="1.8"/>
-            <polygon points="800,210 820,210 815,250 795,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
-            <polygon points="855,200 870,200 860,250 848,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
-            <line x1="785" y1="184" x2="890" y2="175" stroke="#ff0055" stroke-width="3" filter="url(#neonPinkGlowHero)"/>
+            <path d="M780,185 L890,175 L895,190 L810,210 Z" fill="#0a2136" stroke="#00e676" stroke-width="1.8"/>
+            <polygon points="800,210 820,210 815,250 795,250" fill="#04121f" stroke="#ffea00" stroke-width="1.2"/>
+            <polygon points="855,200 870,200 860,250 848,250" fill="#04121f" stroke="#ffea00" stroke-width="1.2"/>
+            <line x1="785" y1="184" x2="890" y2="175" stroke="#ffea00" stroke-width="3" filter="url(#neonPinkGlowHero)"/>
           </g>
 
           <!-- Carroceria -->
           <path d="M120,380 C130,340 180,300 240,295 C320,290 380,270 420,230 C460,190 540,175 640,180 C720,185 770,215 820,255 C870,275 890,320 890,380 C890,395 860,405 820,405 C780,405 760,370 730,370 C690,370 670,405 340,405 C310,405 290,370 260,370 C230,370 200,405 135,405 Z" 
                 fill="url(#bodyGradientHero)" 
-                stroke="#4a2574" 
+                stroke="#008f44" 
                 stroke-width="2.5"/>
 
           <path d="M245,296 C330,290 385,272 422,232 C462,192 542,177 642,182 C718,187 766,216 812,254" 
-                stroke="#a855f7" 
+                stroke="#00e676" 
                 stroke-width="2" 
                 opacity="0.85" 
                 fill="none"/>
 
           <path d="M210,335 L380,320 L580,320 L760,335 L810,345" 
-                stroke="#ff007f" 
+                stroke="#ffea00" 
                 stroke-width="2.5" 
                 stroke-dasharray="16 4 8 4" 
                 filter="url(#neonPinkGlowHero)"/>
@@ -281,65 +281,65 @@
           <g class="car-cabin">
             <path d="M430,232 C470,195 535,185 630,188 C695,190 735,215 775,250 L625,255 L430,232 Z" 
                   fill="url(#windshieldGlassHero)" 
-                  stroke="#8b5cf6" 
+                  stroke="#0099ff" 
                   stroke-width="1.8"/>
-            <polygon points="620,190 635,190 630,255 618,255" fill="#150f28" stroke="#3b1d5c" stroke-width="1"/>
+            <polygon points="620,190 635,190 630,255 618,255" fill="#041220" stroke="#0055d4" stroke-width="1"/>
             <path d="M470,225 L550,190 L570,190 L485,228 Z" fill="#ffffff" opacity="0.25"/>
           </g>
 
           <!-- Capô e Vents -->
           <path d="M140,360 C170,320 220,300 290,298 L415,310 L395,335 L200,355 Z" fill="url(#hoodSheenHero)"/>
-          <line x1="280" y1="318" x2="340" y2="315" stroke="#ff007f" stroke-width="2.5" opacity="0.9"/>
-          <line x1="295" y1="326" x2="350" y2="323" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
-          <line x1="310" y1="334" x2="360" y2="331" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7"/>
+          <line x1="280" y1="318" x2="340" y2="315" stroke="#ffea00" stroke-width="2.5" opacity="0.9"/>
+          <line x1="295" y1="326" x2="350" y2="323" stroke="#00e676" stroke-width="2" opacity="0.8"/>
+          <line x1="310" y1="334" x2="360" y2="331" stroke="#0099ff" stroke-width="1.5" opacity="0.7"/>
 
           <!-- Grade Dianteira -->
-          <polygon points="110,388 160,398 155,412 95,402" fill="#08080f" stroke="#ff007f" stroke-width="2"/>
-          <line x1="95" y1="404" x2="158" y2="414" stroke="#ff007f" stroke-width="3" filter="url(#neonPinkGlowHero)"/>
+          <polygon points="110,388 160,398 155,412 95,402" fill="#040d18" stroke="#00e676" stroke-width="2"/>
+          <line x1="95" y1="404" x2="158" y2="414" stroke="#ffea00" stroke-width="3" filter="url(#neonPinkGlowHero)"/>
 
           <!-- Faróis Acesos -->
           <g class="headlights-cluster" filter="url(#headlightGlowHero)">
             <polygon points="125,355 185,348 180,364 122,370" fill="url(#headlightCoreHero)"/>
             <line x1="124" y1="352" x2="200" y2="344" stroke="#ffffff" stroke-width="3.5"/>
-            <circle cx="150" cy="358" r="9" fill="#ffffff" stroke="#00f0ff" stroke-width="2.5"/>
+            <circle cx="150" cy="358" r="9" fill="#ffffff" stroke="#0099ff" stroke-width="2.5"/>
             <circle cx="150" cy="358" r="4" fill="#ffffff"/>
           </g>
 
           <!-- Lanternas Traseiras -->
           <g class="taillight-cluster" filter="url(#neonPinkGlowHero)">
-            <path d="M850,290 L885,305 L880,320 L845,310 Z" fill="#ff0055"/>
+            <path d="M850,290 L885,305 L880,320 L845,310 Z" fill="#ffea00"/>
             <line x1="846" y1="292" x2="885" y2="307" stroke="#ffffff" stroke-width="2.5"/>
           </g>
 
           <!-- Rodas -->
           <g class="front-wheel">
-            <ellipse cx="230" cy="385" rx="54" ry="54" fill="url(#tireRubberHero)" stroke="#0f1118" stroke-width="4"/>
-            <circle cx="230" cy="385" r="38" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
-            <circle cx="230" cy="385" r="28" fill="#1b1c25" stroke="#333748" stroke-width="1.5"/>
-            <path d="M225,360 A26,26 0 0,1 250,378" stroke="#ff007f" stroke-width="5" stroke-linecap="round" filter="url(#neonPinkGlowHero)"/>
+            <ellipse cx="230" cy="385" rx="54" ry="54" fill="url(#tireRubberHero)" stroke="#06121f" stroke-width="4"/>
+            <circle cx="230" cy="385" r="38" fill="#051424" stroke="#008f44" stroke-width="3"/>
+            <circle cx="230" cy="385" r="28" fill="#0d2035" stroke="#16395b" stroke-width="1.5"/>
+            <path d="M225,360 A26,26 0 0,1 250,378" stroke="#00e676" stroke-width="5" stroke-linecap="round" filter="url(#neonPinkGlowHero)"/>
             <line x1="230" y1="350" x2="230" y2="420" stroke="url(#rimGlowHero)" stroke-width="3"/>
             <line x1="195" y1="385" x2="265" y2="385" stroke="url(#rimGlowHero)" stroke-width="3"/>
             <line x1="205" y1="360" x2="255" y2="410" stroke="url(#rimGlowHero)" stroke-width="3"/>
             <line x1="205" y1="410" x2="255" y2="360" stroke="url(#rimGlowHero)" stroke-width="3"/>
-            <circle cx="230" cy="385" r="8" fill="#ff007f" filter="url(#neonPinkGlowHero)"/>
+            <circle cx="230" cy="385" r="8" fill="#ffea00" filter="url(#neonPinkGlowHero)"/>
             <circle cx="230" cy="385" r="3" fill="#ffffff"/>
           </g>
 
           <g class="rear-wheel">
-            <ellipse cx="730" cy="385" rx="56" ry="56" fill="url(#tireRubberHero)" stroke="#0f1118" stroke-width="4"/>
-            <circle cx="730" cy="385" r="40" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
-            <circle cx="730" cy="385" r="30" fill="#1b1c25" stroke="#333748" stroke-width="1.5"/>
-            <path d="M725,358 A28,28 0 0,1 754,378" stroke="#ff007f" stroke-width="5.5" stroke-linecap="round" filter="url(#neonPinkGlowHero)"/>
+            <ellipse cx="730" cy="385" rx="56" ry="56" fill="url(#tireRubberHero)" stroke="#06121f" stroke-width="4"/>
+            <circle cx="730" cy="385" r="40" fill="#051424" stroke="#008f44" stroke-width="3"/>
+            <circle cx="730" cy="385" r="30" fill="#0d2035" stroke="#16395b" stroke-width="1.5"/>
+            <path d="M725,358 A28,28 0 0,1 754,378" stroke="#00e676" stroke-width="5.5" stroke-linecap="round" filter="url(#neonPinkGlowHero)"/>
             <line x1="730" y1="348" x2="730" y2="422" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
             <line x1="693" y1="385" x2="767" y2="385" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
             <line x1="704" y1="359" x2="756" y2="411" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
             <line x1="704" y1="411" x2="756" y2="359" stroke="url(#rimGlowHero)" stroke-width="3.5"/>
-            <circle cx="730" cy="385" r="9" fill="#ff007f" filter="url(#neonPinkGlowHero)"/>
+            <circle cx="730" cy="385" r="9" fill="#ffea00" filter="url(#neonPinkGlowHero)"/>
             <circle cx="730" cy="385" r="3.5" fill="#ffffff"/>
           </g>
 
-          <text x="470" y="342" fill="#e9d5ff" font-family="'Orbitron', sans-serif" font-size="13" font-weight="800" letter-spacing="4" opacity="0.8">EF-07 // TURBO</text>
-          <line x1="290" y1="398" x2="670" y2="398" stroke="#ff007f" stroke-width="2.5" filter="url(#neonPinkGlowHero)"/>
+          <text x="470" y="342" fill="#bbf7d0" font-family="'Orbitron', sans-serif" font-size="13" font-weight="800" letter-spacing="4" opacity="0.9">EF-07 // BRASIL NITRO</text>
+          <line x1="290" y1="398" x2="670" y2="398" stroke="#00e676" stroke-width="2.5" filter="url(#neonPinkGlowHero)"/>
         </svg>
 
         <div class="exhaust-flame flame-left" id="flameLeft"></div>
@@ -347,7 +347,7 @@
 
         <div class="car-interactive-badge" id="carBadge" title="Pilote o carro com WASD ou clique!">
           <span class="badge-icon">🎮</span>
-          <span class="badge-text">MODO JOGO // PILOTE NO WASD</span>
+          <span class="badge-text">MODO JOGO // PILOTE NO WASD 🇧🇷</span>
         </div>
       </div>
 
@@ -369,13 +369,13 @@
 
           <!-- Frase / Subtítulo -->
           <p class="hero-subtitle">
-            Estudante de T.I. e jogador de futevôlei amador
+            Estudante de T.I. e jogador de futevôlei amador // Edição Brasil 🇧🇷
           </p>
 
           <div class="hero-tags-wrapper">
-            <span class="cyber-chip"><span class="chip-dot"></span> DEV EM FORMAÇÃO</span>
-            <span class="cyber-chip"><span class="chip-dot"></span> ALTA PERFORMANCE</span>
+            <span class="cyber-chip"><span class="chip-dot"></span> BRASIL CYBERPUNK</span>
             <span class="cyber-chip"><span class="chip-dot"></span> AREIA & CÓDIGO</span>
+            <span class="cyber-chip"><span class="chip-dot"></span> ALTA PERFORMANCE</span>
           </div>
 
           <!-- Botão de Chamada para Ação: Navega Direto para a Garagem -->
@@ -550,10 +550,10 @@
               <svg class="garage-car-svg" id="garageCarSvg" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="bodyPaintDynamic" x1="100" y1="180" x2="880" y2="400" gradientUnits="userSpaceOnUse">
-                    <stop id="paintStop1" offset="0%" stop-color="#141829"/>
-                    <stop id="paintStop2" offset="35%" stop-color="#231b3d"/>
-                    <stop id="paintStop3" offset="70%" stop-color="#120f24"/>
-                    <stop id="paintStop4" offset="100%" stop-color="#0a0a14"/>
+                    <stop id="paintStop1" offset="0%" stop-color="#041a38"/>
+                    <stop id="paintStop2" offset="35%" stop-color="#003882"/>
+                    <stop id="paintStop3" offset="70%" stop-color="#020f26"/>
+                    <stop id="paintStop4" offset="100%" stop-color="#020814"/>
                   </linearGradient>
 
                   <filter id="neonCustomGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -566,62 +566,62 @@
                   </filter>
                 </defs>
 
-                <!-- Underglow no chão -->
-                <ellipse id="svgUnderglow1" cx="510" cy="425" rx="420" ry="24" fill="#ff007f" opacity="0.75" filter="url(#neonCustomGlow)"/>
-                <ellipse id="svgUnderglow2" cx="510" cy="425" rx="300" ry="14" fill="#ff2a85" opacity="0.95" filter="url(#neonCustomGlow)"/>
+                <!-- Underglow no chão Brasil: Verde Neon e Amarelo Ouro -->
+                <ellipse id="svgUnderglow1" cx="510" cy="425" rx="420" ry="24" fill="#00e676" opacity="0.75" filter="url(#neonCustomGlow)"/>
+                <ellipse id="svgUnderglow2" cx="510" cy="425" rx="300" ry="14" fill="#ffea00" opacity="0.95" filter="url(#neonCustomGlow)"/>
 
-                <polygon points="120,420 890,420 860,390 140,390" fill="#04050a" opacity="0.85"/>
+                <polygon points="120,420 890,420 860,390 140,390" fill="#020813" opacity="0.85"/>
 
                 <!-- Spoiler -->
                 <g class="garage-spoiler">
-                  <path d="M780,185 L890,175 L895,190 L810,210 Z" fill="#1b122c" id="spoilerWing" stroke="#ff007f" stroke-width="1.8"/>
-                  <polygon points="800,210 820,210 815,250 795,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
-                  <polygon points="855,200 870,200 860,250 848,250" fill="#0e0a17" stroke="#8b5cf6" stroke-width="1.2"/>
-                  <line id="spoilerLed" x1="785" y1="184" x2="890" y2="175" stroke="#ff007f" stroke-width="3" filter="url(#neonCustomGlow)"/>
+                  <path d="M780,185 L890,175 L895,190 L810,210 Z" fill="#0a2136" id="spoilerWing" stroke="#00e676" stroke-width="1.8"/>
+                  <polygon points="800,210 820,210 815,250 795,250" fill="#04121f" stroke="#ffea00" stroke-width="1.2"/>
+                  <polygon points="855,200 870,200 860,250 848,250" fill="#04121f" stroke="#ffea00" stroke-width="1.2"/>
+                  <line id="spoilerLed" x1="785" y1="184" x2="890" y2="175" stroke="#ffea00" stroke-width="3" filter="url(#neonCustomGlow)"/>
                 </g>
 
                 <!-- Carroceria com Gradiente Dinâmico -->
                 <path d="M120,380 C130,340 180,300 240,295 C320,290 380,270 420,230 C460,190 540,175 640,180 C720,185 770,215 820,255 C870,275 890,320 890,380 C890,395 860,405 820,405 C780,405 760,370 730,370 C690,370 670,405 340,405 C310,405 290,370 260,370 C230,370 200,405 135,405 Z" 
                       fill="url(#bodyPaintDynamic)" 
-                      stroke="#4a2574" 
+                      stroke="#008f44" 
                       stroke-width="2.5"/>
 
                 <path id="garageDecalLine" d="M210,335 L380,320 L580,320 L760,335 L810,345" 
-                      stroke="#ff007f" 
+                      stroke="#ffea00" 
                       stroke-width="2.5" 
                       stroke-dasharray="16 4 8 4" 
                       filter="url(#neonCustomGlow)"/>
 
                 <!-- Cockpit -->
                 <path d="M430,232 C470,195 535,185 630,188 C695,190 735,215 775,250 L625,255 L430,232 Z" 
-                      fill="#0e1329" 
-                      stroke="#8b5cf6" 
+                      fill="#030c1d" 
+                      stroke="#0099ff" 
                       stroke-width="1.8"/>
 
                 <!-- Faróis -->
                 <g id="garageHeadlights" class="headlights-cluster">
                   <polygon points="125,355 185,348 180,364 122,370" fill="#ffffff"/>
                   <line x1="124" y1="352" x2="200" y2="344" stroke="#ffffff" stroke-width="3.5"/>
-                  <circle cx="150" cy="358" r="9" fill="#ffffff" stroke="#00f0ff" stroke-width="2.5"/>
+                  <circle cx="150" cy="358" r="9" fill="#ffffff" stroke="#0099ff" stroke-width="2.5"/>
                   <circle cx="150" cy="358" r="4" fill="#ffffff"/>
                 </g>
 
                 <!-- Rodas -->
                 <g>
-                  <ellipse cx="230" cy="385" rx="54" ry="54" fill="#141824" stroke="#0f1118" stroke-width="4"/>
-                  <circle cx="230" cy="385" r="38" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
-                  <path id="caliperFront" d="M225,360 A26,26 0 0,1 250,378" stroke="#ff007f" stroke-width="5" stroke-linecap="round"/>
-                  <circle id="hubFront" cx="230" cy="385" r="7" fill="#ff007f"/>
+                  <ellipse cx="230" cy="385" rx="54" ry="54" fill="#06121f" stroke="#008f44" stroke-width="4"/>
+                  <circle cx="230" cy="385" r="38" fill="#051424" stroke="#008f44" stroke-width="3"/>
+                  <path id="caliperFront" d="M225,360 A26,26 0 0,1 250,378" stroke="#00e676" stroke-width="5" stroke-linecap="round"/>
+                  <circle id="hubFront" cx="230" cy="385" r="7" fill="#ffea00"/>
                 </g>
 
                 <g>
-                  <ellipse cx="730" cy="385" rx="56" ry="56" fill="#141824" stroke="#0f1118" stroke-width="4"/>
-                  <circle cx="730" cy="385" r="40" fill="#110d1e" stroke="#2b1a45" stroke-width="3"/>
-                  <path id="caliperRear" d="M725,358 A28,28 0 0,1 754,378" stroke="#ff007f" stroke-width="5.5" stroke-linecap="round"/>
-                  <circle id="hubRear" cx="730" cy="385" r="8" fill="#ff007f"/>
+                  <ellipse cx="730" cy="385" rx="56" ry="56" fill="#06121f" stroke="#008f44" stroke-width="4"/>
+                  <circle cx="730" cy="385" r="40" fill="#051424" stroke="#008f44" stroke-width="3"/>
+                  <path id="caliperRear" d="M725,358 A28,28 0 0,1 754,378" stroke="#00e676" stroke-width="5.5" stroke-linecap="round"/>
+                  <circle id="hubRear" cx="730" cy="385" r="8" fill="#ffea00"/>
                 </g>
 
-                <text x="470" y="342" fill="#e9d5ff" font-family="'Orbitron', sans-serif" font-size="13" font-weight="800" letter-spacing="4">EF-07 // CUSTOM</text>
+                <text x="470" y="342" fill="#bbf7d0" font-family="'Orbitron', sans-serif" font-size="13" font-weight="800" letter-spacing="4">EF-07 // BRASIL CUSTOM</text>
               </svg>
             </div>
 
@@ -636,34 +636,34 @@
             <div class="control-group">
               <span class="control-label">1. ILUMINAÇÃO NEON UNDERGLOW:</span>
               <div class="color-swatches" role="radiogroup" aria-label="Cor do Neon Underglow">
-                <button type="button" class="swatch-btn active" data-neon="#ff007f" data-name="Magenta Clássico" style="--swatch-color: #ff007f;" title="Magenta Neon"></button>
-                <button type="button" class="swatch-btn" data-neon="#00f0ff" data-name="Ciano Elétrico" style="--swatch-color: #00f0ff;" title="Ciano Elétrico"></button>
-                <button type="button" class="swatch-btn" data-neon="#8b5cf6" data-name="Roxo Hiperdrive" style="--swatch-color: #8b5cf6;" title="Roxo Hiperdrive"></button>
-                <button type="button" class="swatch-btn" data-neon="#10b981" data-name="Verde Matrix" style="--swatch-color: #10b981;" title="Verde Matrix"></button>
-                <button type="button" class="swatch-btn" data-neon="#facc15" data-name="Amarelo Nitro" style="--swatch-color: #facc15;" title="Amarelo Nitro"></button>
+                <button type="button" class="swatch-btn active" data-neon="#00e676" data-name="Verde Canarinho" style="--swatch-color: #00e676;" title="Verde Canarinho"></button>
+                <button type="button" class="swatch-btn" data-neon="#ffea00" data-name="Amarelo Nitro" style="--swatch-color: #ffea00;" title="Amarelo Nitro"></button>
+                <button type="button" class="swatch-btn" data-neon="#0088ff" data-name="Azul Seleção" style="--swatch-color: #0088ff;" title="Azul Seleção"></button>
+                <button type="button" class="swatch-btn" data-neon="#00ff66" data-name="Verde Amazônia" style="--swatch-color: #00ff66;" title="Verde Amazônia"></button>
+                <button type="button" class="swatch-btn" data-neon="#ffffff" data-name="Branco Cruzeiro" style="--swatch-color: #ffffff;" title="Branco Cruzeiro"></button>
               </div>
-              <span class="swatch-current-name" id="currentNeonLabel">COR ATIVA: MAGENTA CLÁSSICO</span>
+              <span class="swatch-current-name" id="currentNeonLabel">COR ATIVA: VERDE CANARINHO</span>
             </div>
 
             <!-- Controle 2: Pintura da Lataria -->
             <div class="control-group">
               <span class="control-label">2. PINTURA DA LATARIA:</span>
               <div class="paint-swatches" role="radiogroup" aria-label="Pintura da Carroceria">
-                <button type="button" class="paint-btn active" data-p1="#141829" data-p2="#231b3d" data-p3="#120f24" data-name="Preto Meia-Noite">
-                  <span class="paint-preview" style="background: linear-gradient(135deg, #141829, #231b3d);"></span>
-                  <span class="paint-name">Meia-Noite</span>
+                <button type="button" class="paint-btn active" data-p1="#041a38" data-p2="#003882" data-p3="#020f26" data-name="Azul Seleção">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #041a38, #003882);"></span>
+                  <span class="paint-name">Azul Seleção</span>
                 </button>
-                <button type="button" class="paint-btn" data-p1="#2d084d" data-p2="#4a154b" data-p3="#190626" data-name="Roxo Ametista">
-                  <span class="paint-preview" style="background: linear-gradient(135deg, #2d084d, #4a154b);"></span>
-                  <span class="paint-name">Ametista</span>
+                <button type="button" class="paint-btn" data-p1="#012613" data-p2="#02592b" data-p3="#001509" data-name="Verde Bandeira">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #012613, #02592b);"></span>
+                  <span class="paint-name">Verde Bandeira</span>
                 </button>
-                <button type="button" class="paint-btn" data-p1="#06283d" data-p2="#0a3a5e" data-p3="#031522" data-name="Azul Abissal">
-                  <span class="paint-preview" style="background: linear-gradient(135deg, #06283d, #0a3a5e);"></span>
-                  <span class="paint-name">Azul Abissal</span>
+                <button type="button" class="paint-btn" data-p1="#3d2e00" data-p2="#694f00" data-p3="#1a1300" data-name="Amarelo Nitro">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #3d2e00, #694f00);"></span>
+                  <span class="paint-name">Amarelo Nitro</span>
                 </button>
-                <button type="button" class="paint-btn" data-p1="#2b0a1a" data-p2="#521330" data-p3="#15050d" data-name="Rubi Cyber">
-                  <span class="paint-preview" style="background: linear-gradient(135deg, #2b0a1a, #521330);"></span>
-                  <span class="paint-name">Rubi Cyber</span>
+                <button type="button" class="paint-btn" data-p1="#06111f" data-p2="#0d233e" data-p3="#02070e" data-name="Asfalto Brasil">
+                  <span class="paint-preview" style="background: linear-gradient(135deg, #06111f, #0d233e);"></span>
+                  <span class="paint-name">Asfalto Brasil</span>
                 </button>
               </div>
             </div>
@@ -875,17 +875,17 @@
 
 
   <!-- ================================================================= -->
-  <!-- HUD DE PILOTAGEM CYBERPUNK (MODO JOGO WASD INTERATIVO)            -->
+  <!-- HUD DE PILOTAGEM CYBERPUNK (MODO JOGO WASD / EDIÇÃO BRASIL)       -->
   <!-- ================================================================= -->
   <aside class="cyber-game-hud" id="gameHud" aria-label="Painel de Pilotagem do Veículo">
     <div class="hud-frame">
       <div class="hud-header">
         <div class="hud-status">
           <span class="hud-pulse-light"></span>
-          <span class="hud-title">COCKPIT // EF-07</span>
+          <span class="hud-title">COCKPIT // EF-07 BRASIL 🇧🇷</span>
         </div>
         <div class="hud-top-meta">
-          <span class="hud-gear" id="hudGear">D-4</span>
+          <span class="hud-gear" id="hudGear">D-1</span>
           <button type="button" class="hud-toggle-btn" id="btnToggleHud" title="Minimizar / Expandir Painel" aria-label="Minimizar Controles">
             <span class="toggle-icon" id="toggleHudIcon">−</span>
           </button>
@@ -897,9 +897,9 @@
         <div class="hud-dash-grid">
           <div class="hud-metric-box">
             <span class="metric-label">VELOCIDADE</span>
-            <div class="metric-val"><span id="hudSpeedDisplay">140</span> <small>KM/H</small></div>
+            <div class="metric-val"><span id="hudSpeedDisplay">0</span> <small>KM/H</small></div>
             <div class="hud-gauge-bar">
-              <div class="hud-gauge-progress" id="hudSpeedGauge" style="width: 65%;"></div>
+              <div class="hud-gauge-progress" id="hudSpeedGauge" style="width: 15%;"></div>
             </div>
           </div>
           <div class="hud-metric-box">
@@ -917,15 +917,15 @@
             </button>
           </div>
           <div class="wasd-row wasd-bottom">
-            <button type="button" class="wasd-key" data-key="a" id="wasdKeyA" title="Esterçar Esquerda (A ou ←)">
+            <button type="button" class="wasd-key" data-key="a" id="wasdKeyA" title="Esterçar Esquerda / Drift (A ou ←)">
               <span class="key-glyph">A</span>
               <span class="key-tag">ESQ</span>
             </button>
             <button type="button" class="wasd-key" data-key="s" id="wasdKeyS" title="Freio / Ré / Voltar Seção (S ou ↓)">
               <span class="key-glyph">S</span>
-              <span class="key-tag">RÉ / VOLTAR</span>
+              <span class="key-tag">VOLTAR</span>
             </button>
-            <button type="button" class="wasd-key" data-key="d" id="wasdKeyD" title="Esterçar Direita (D ou →)">
+            <button type="button" class="wasd-key" data-key="d" id="wasdKeyD" title="Esterçar Direita / Drift (D ou →)">
               <span class="key-glyph">D</span>
               <span class="key-tag">DIR</span>
             </button>
@@ -934,29 +934,32 @@
 
         <!-- Trajeto Neon dos Checkpoints -->
         <div class="hud-route-container">
-          <span class="route-caption">ROTA DA CIDADE:</span>
+          <div class="route-header-flex">
+            <span class="route-caption">ROTA BRASIL:</span>
+            <span class="route-car-indicator" id="hudMiniCar" title="Posição do carro na rota">🏎️</span>
+          </div>
           <div class="hud-checkpoints-row" id="hudCheckpointsRow">
-            <button type="button" class="checkpoint-node active" data-dest="hero" title="Ir para Início">
+            <button type="button" class="checkpoint-node active" data-dest="hero" data-index="0" title="Ir para Início">
               <span class="node-dot"></span>
               <span class="node-label">INÍCIO</span>
             </button>
             <span class="node-connector"></span>
-            <button type="button" class="checkpoint-node" data-dest="sobre" title="Ir para Sobre">
+            <button type="button" class="checkpoint-node" data-dest="sobre" data-index="1" title="Ir para Sobre">
               <span class="node-dot"></span>
               <span class="node-label">SOBRE</span>
             </button>
             <span class="node-connector"></span>
-            <button type="button" class="checkpoint-node" data-dest="garagem" title="Ir para Garagem">
+            <button type="button" class="checkpoint-node" data-dest="garagem" data-index="2" title="Ir para Garagem">
               <span class="node-dot"></span>
               <span class="node-label">GARAGEM</span>
             </button>
             <span class="node-connector"></span>
-            <button type="button" class="checkpoint-node" data-dest="projetos" title="Ir para Projetos">
+            <button type="button" class="checkpoint-node" data-dest="projetos" data-index="3" title="Ir para Projetos">
               <span class="node-dot"></span>
               <span class="node-label">PROJETOS</span>
             </button>
             <span class="node-connector"></span>
-            <button type="button" class="checkpoint-node" data-dest="contato" title="Ir para Contato">
+            <button type="button" class="checkpoint-node" data-dest="contato" data-index="4" title="Ir para Contato">
               <span class="node-dot"></span>
               <span class="node-label">CONTATO</span>
             </button>
@@ -965,11 +968,17 @@
 
         <div class="hud-tip-banner">
           <span class="tip-icon">🕹️</span>
-          <span class="tip-text">USE <strong>WASD</strong> OU <strong>SETAS</strong> PARA NAVEGAR</span>
+          <span class="tip-text">USE <strong>WASD</strong> OU <strong>SETAS</strong> PARA PILOTAR</span>
         </div>
       </div>
     </div>
   </aside>
+
+  <!-- Botão de reabrir cockpit quando minimizado -->
+  <button type="button" class="hud-reopen-pill" id="btnReopenHud" aria-label="Abrir Cockpit do Carro" title="Abrir Cockpit do Carro (WASD)">
+    <span class="pill-icon">🏎️</span>
+    <span class="pill-text">PILOTAR CARRO [WASD]</span>
+  </button>
 
   </main>
 
